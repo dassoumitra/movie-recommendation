@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Recommendation System</title>
+
+<!-- Bootstrap -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom CSS -->
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+
+</head>
+
+<body class="bg-dark text-light">
+
+<div class="hero-section">
+
+    <div class="hero-content">
+
+        <h1 class="hero-title">
+            🎬 Movie Recommendation System
+        </h1>
+
+        <p class="hero-subtitle">
+            Discover movies similar to your favorites using Machine Learning
+        </p>
+
+    </div>
+
+</div>
+
+<!-- Search Form -->
+<form method="POST">
+
+    <div class="row align-items-center">
+
+        <div class="col-md-10">
+
+            <select class="form-select" name="movie" required>
+
+                {% for movie in movies %}
+                <option value="{{ movie }}">
+                    {{ movie }}
+                </option>
+                {% endfor %}
+
+            </select>
+
+        </div>
+
+        <div class="col-md-2">
+
+            <button
+                type="submit"
+                class="btn btn-info w-100">
+                Recommend
+            </button>
+
+        </div>
+
+    </div>
+
+</form>
+
+<!-- Recommendation Section -->
+{% if recommendations %}
+
+<h2 class="mt-5 mb-4">
+    Recommended Movies
+</h2>
+
+<div class="row">
+
+    {% for movie in recommendations %}
+
+    <div class="col-lg-4 col-md-6 mb-4">
+
+        <div class="card bg-secondary text-white h-100">
+
+            <img
+                src="{{ movie.poster }}"
+                class="card-img-top"
+                alt="{{ movie.title }}">
+
+            <div class="card-body">
+
+                <h5 class="card-title">
+                    {{ movie.title }}
+                </h5>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    {% endfor %}
+
+</div>
+
+{% endif %}
+
+
+</div>
+
+<footer class="footer mt-5">
+
+    <div class="container text-center">
+
+        <p>
+            © 2026 Movie Recommendation System. All Rights Reserved.
+        </p>
+
+        <p>
+            Developed by <strong>Soumitra Das</strong>
+        </p>
+
+        <p>
+            Movie data and posters provided by
+            <a href="https://www.themoviedb.org/"
+               target="_blank">
+               TMDB
+            </a>
+        </p>
+
+        <p class="small">
+            Special thanks to TMDB for providing movie metadata and poster APIs.
+        </p>
+
+    </div>
+
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
