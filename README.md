@@ -26,7 +26,7 @@ A Machine Learning based Movie Recommendation System built using **Flask**, **Co
 
 ### Home Page
 
-![Home Page](screenshots/screenshots/Screenshot 2026-06-03 135342.png)
+![Home Page](screenshots/Screenshot 2026-06-03 135342.png)
 
 ### Recommendation Results
 
