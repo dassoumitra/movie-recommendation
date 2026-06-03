@@ -38,9 +38,7 @@ A Machine Learning based Movie Recommendation System built using **Flask**, **Co
 
 Watch the project demo here:
 
-```text
-https://drive.google.com/file/d/185sab40YGHf7RNZOG9V7SLxcqg06xTZA/view?usp=sharing
-```
+[▶️ Watch Demo Video](https://drive.google.com/file/d/185sab40YGHf7RNZOG9V7SLxcqg06xTZA/view?usp=sharing)
 ---
 
 ## 🛠️ Tech Stack
