@@ -10,6 +10,21 @@ A Machine Learning based Movie Recommendation System built using **Flask**, **Co
 
 ---
 
+## 🔗 Live Demo & Resources
+
+🌐 **Live Website:** [https://your-deployed-app-url](https://movie-recommendation-ayld.onrender.com/)
+
+🎥 **Demo Video:** [![Watch Demo](screenshots/demo-thumbnail.png)](https://drive.google.com/file/d/185sab40YGHf7RNZOG9V7SLxcqg06xTZA/view?usp=sharing)
+
+📂 **Model Files (Google Drive):**
+- movie_pivot.pkl
+- similarity.pkl
+
+🔗 Model Download Folder:
+[https://drive.google.com/your-model-folder-link](https://drive.google.com/drive/folders/1CD08nPMaGBcd0Z1374fGK8V3f5_f_iUk?usp=drive_link)
+
+---
+
 ## 📌 Features
 
 * 🎥 Movie Recommendation using Collaborative Filtering
