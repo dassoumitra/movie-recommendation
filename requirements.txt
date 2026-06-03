@@ -1,0 +1,7 @@
+flask
+gunicorn
+numpy
+pandas
+requests
+gdown
+scikit-learn
